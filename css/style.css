@@ -107,12 +107,11 @@ body {
     left: 0;
     width: 100%;
     padding: 2rem 7%;
-    background-color: #754ef9;
+    background: transparent;
     display: flex;
     align-items: center;
     z-index: 100;
     transition: .5s;
-    
 }
 
 .header.sticky {
@@ -122,7 +121,7 @@ body {
 
 .logo {
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--main-color);
     font-weight: 600;
     margin-right: auto;
 }
@@ -157,16 +156,15 @@ body {
     background: var(--main-color);
     opacity: .7;
 }
-
-.header.sticky {
-    color: var(--text-color);
-    opacity: .9;
-}
-
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 7% 2rem;
 }
 /*
 .hr{
