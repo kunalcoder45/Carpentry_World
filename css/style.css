@@ -1,4 +1,4 @@
-/*loader
+/*loader*/
 #loader{
     height: 100%;
     width: 100%;
@@ -256,7 +256,7 @@ section {
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
     html {
-        font-size: 45%;
+        font-size: 55%;
     }
 
     .home .profession-container .profession-box {
