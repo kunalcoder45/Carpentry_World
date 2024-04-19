@@ -17,11 +17,36 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
- <!-- <div id="loader">
+  <div id="loader"> <script>
+function loaderAnimation() {
+    var loader = document.querySelector("#loader")
+    setTimeout(function () {
+        loader.style.top = "-100%"
+    }, 4200)
+}
+loaderAnimation()
+const navBar = document.querySelector("nav"),
+
+        menuBtns = document.querySelectorAll(".menu-icon"),
+
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      })
+;
+
+</script>
         <h1>Furniture</h1>
         <h1>Book Your Appointment</h1>
         <h1>Visit us</h1>
-</div>-->
+</div>
    <!-- header design -->
     <header class="header">
         <a href="#head" class="logo">Carpentry World</a>
